@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="26dp"
+    android:orientation="vertical"
+    tools:context=".ui.auth.signin.SignInFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        style="@style/TextView.PoppinsMedium22sp202020"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find your best ever meal"
+        style="@style/EditText.PoppinsNormal14sp8D92A3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:layout_marginTop="70dp"
+        style="@style/TextView.PoppinsNormal16sp202020"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your email address"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rectangle_outline_black"
+        style="@style/EditText.PoppinsNormal14sp8D92A3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        style="@style/TextView.PoppinsNormal16sp202020"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your password"
+        android:inputType="textPassword"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rectangle_outline_black"
+        style="@style/EditText.PoppinsNormal14sp8D92A3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        style="@style/Button.Primary"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        style="@style/Button.Secondary"/>
+</LinearLayout>
