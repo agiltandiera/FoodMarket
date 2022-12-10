@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Sign In"
             style="@style/TextView.PoppinsMedium22sp202020"/>
 
         <TextView
@@ -28,62 +28,74 @@
             android:text="Find your best ever meal"
             style="@style/EditText.PoppinsNormal14sp8D92A3"/>
 
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/empty_photo"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"/>
-
         <TextView
-            android:id="@+id/tct_fullName_signup"
+            android:id="@+id/txt_phoneNo_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Full Name"
+            android:text="Phone No."
             android:layout_marginTop="16dp"
             style="@style/TextView.PoppinsNormal16sp202020"/>
 
         <EditText
-            android:id="@+id/et_fullName_signup"
+            android:id="@+id/et_phoneNo_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="your full name"
+            android:hint="your phone number"
             android:layout_marginTop="6dp"
             android:padding="10dp"
             android:background="@drawable/shape_rectangle_outline_black"
             style="@style/EditText.PoppinsNormal14sp8D92A3"/>
 
         <TextView
-            android:id="@+id/txt_emailAddress_signup"
+            android:id="@+id/txt_address_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email Address"
+            android:text="Address"
             android:layout_marginTop="16dp"
             style="@style/TextView.PoppinsNormal16sp202020"/>
 
         <EditText
-            android:id="@+id/et_emailAddress_signup"
+            android:id="@+id/et_address_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="your email address"
+            android:hint="your address"
             android:layout_marginTop="6dp"
             android:padding="10dp"
             android:background="@drawable/shape_rectangle_outline_black"
             style="@style/EditText.PoppinsNormal14sp8D92A3"/>
 
         <TextView
-            android:id="@+id/txt_password_signup"
+            android:id="@+id/txt_houseNo_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="House No."
             android:layout_marginTop="16dp"
             style="@style/TextView.PoppinsNormal16sp202020"/>
 
         <EditText
-            android:id="@+id/et_password_signup"
+            android:id="@+id/et_houseNo_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="your password"
+            android:hint="your house number"
+            android:inputType="textPassword"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_rectangle_outline_black"
+            style="@style/EditText.PoppinsNormal14sp8D92A3"/>
+
+        <TextView
+            android:id="@+id/txt_city_signUpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginTop="16dp"
+            style="@style/TextView.PoppinsNormal16sp202020"/>
+
+        <EditText
+            android:id="@+id/et_city_signUpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select your city"
             android:inputType="textPassword"
             android:layout_marginTop="6dp"
             android:padding="10dp"
@@ -91,13 +103,14 @@
             style="@style/EditText.PoppinsNormal14sp8D92A3"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_continue_signup"
+            android:id="@+id/btn_signUpNow_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Continue"
+            android:text="Sign Up Now"
             android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
             android:layout_marginTop="24dp"
-            style="@style/Button.Primary"/>
+            style="@style/Button.Primary" />
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
