@@ -12,25 +12,11 @@
     tools:context=".ui.auth.signin.SignInFragment">
 
     <TextView
-        android:id="@+id/txt_signIn_signIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
-        style="@style/TextView.PoppinsMedium22sp202020"/>
-
-    <TextView
-        android:id="@+id/txt_description_signIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Find your best ever meal"
-        style="@style/EditText.PoppinsNormal14sp8D92A3"/>
-
-    <TextView
         android:id="@+id/txt_emailAddress_signIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email Address"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="16dp"
         style="@style/TextView.PoppinsNormal16sp202020"/>
 
     <EditText

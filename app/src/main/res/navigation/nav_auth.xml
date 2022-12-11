@@ -8,11 +8,17 @@
     <fragment android:id="@+id/fragmentSignIn"
         android:name="com.tandiera.project.foodmarket.ui.auth.signin.SignInFragment"
         tools:layout="@layout/fragment_sign_in">
+
+        <action android:id="@+id/action_signup"
+            app:destination="@id/fragmentSignUp"/>
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUp"
         android:name="com.tandiera.project.foodmarket.ui.auth.signup.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
+
+        <action android:id="@+id/action_signup_address"
+            app:destination="@id/fragmentSignUpAddress"/>
     </fragment>
 
     <fragment android:id="@+id/fragmentSignUpAddress"
