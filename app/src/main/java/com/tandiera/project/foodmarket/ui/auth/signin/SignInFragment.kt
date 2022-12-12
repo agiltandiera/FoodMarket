@@ -28,7 +28,7 @@ class SignInFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        binding.btnSignInSignIn.setOnClickListener {
+        binding.btnCreateNewAccSignIn.setOnClickListener {
             val signup = Intent(activity, AuthActivity::class.java)
             signup.putExtra("page_request", 2)
             startActivity(signup)
