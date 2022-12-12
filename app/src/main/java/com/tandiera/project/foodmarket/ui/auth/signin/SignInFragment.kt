@@ -25,6 +25,7 @@ class SignInFragment : Fragment() {
         return view
     }
 
+    // kalau diklik ini malah mengulang ke splashscreen
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
