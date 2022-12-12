@@ -9,6 +9,7 @@ import androidx.navigation.Navigation
 import com.tandiera.project.foodmarket.R
 import com.tandiera.project.foodmarket.databinding.FragmentSignInBinding
 import com.tandiera.project.foodmarket.databinding.FragmentSignUpBinding
+import com.tandiera.project.foodmarket.ui.auth.AuthActivity
 
 class SignUpFragment : Fragment() {
 
@@ -31,6 +32,8 @@ class SignUpFragment : Fragment() {
         binding.btnContinueSignup.setOnClickListener{
             Navigation.findNavController(it)
                 .navigate(R.id.action_signup_address, null)
+
+            (activity as AuthActivity).toolbarSignUpAddress()
         }
     }
 
