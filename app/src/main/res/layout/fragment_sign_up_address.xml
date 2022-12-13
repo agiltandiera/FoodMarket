@@ -17,18 +17,6 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign In"
-            style="@style/TextView.PoppinsMedium22sp202020"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Find your best ever meal"
-            style="@style/EditText.PoppinsNormal14sp8D92A3"/>
-
-        <TextView
             android:id="@+id/txt_phoneNo_signUpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
