@@ -34,8 +34,6 @@ class AuthActivity : AppCompatActivity() {
 
     // bagaimana caranya panggil toolbar di layout toolbar yang include di ui activity auth?
     fun toolbarSignUp() {
-        binding = ActivityAuthBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         setSupportActionBar(binding.layoutToolbar.toolbar)
 
         binding.layoutToolbar.toolbar.title = "Sign Up"
@@ -45,8 +43,6 @@ class AuthActivity : AppCompatActivity() {
     }
 
     fun toolbarSignUpAddress() {
-        binding = ActivityAuthBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         setSupportActionBar(binding.layoutToolbar.toolbar)
 
         binding.layoutToolbar.toolbar.title = "Address"
@@ -56,8 +52,6 @@ class AuthActivity : AppCompatActivity() {
     }
 
     fun toolbarSignUpSuccess() {
-        binding = ActivityAuthBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         setSupportActionBar(binding.layoutToolbar.toolbar)
 
         binding.layoutToolbar.toolbar.visibility = View.GONE
