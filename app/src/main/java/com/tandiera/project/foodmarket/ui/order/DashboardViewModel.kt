@@ -1,4 +1,4 @@
-package com.tandiera.project.foodmarket.ui.ui.dashboard
+package com.tandiera.project.foodmarket.ui.order
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

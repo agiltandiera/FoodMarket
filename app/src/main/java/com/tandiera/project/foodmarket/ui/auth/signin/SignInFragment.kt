@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.tandiera.project.foodmarket.R
 import com.tandiera.project.foodmarket.databinding.FragmentSignInBinding
+import com.tandiera.project.foodmarket.ui.MainActivity
 import com.tandiera.project.foodmarket.ui.auth.AuthActivity
 
 class SignInFragment : Fragment() {
@@ -34,6 +35,12 @@ class SignInFragment : Fragment() {
             signup.putExtra("page_request", 2)
             startActivity(signup)
         }
+
+        binding.btnSignInSignIn.setOnClickListener {
+            val home = Intent(activity, MainActivity::class.java)
+            startActivity(home)
+        }
     }
+
 
 }
