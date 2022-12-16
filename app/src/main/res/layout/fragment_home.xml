@@ -49,10 +49,14 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
         android:layout_width="match_parent"
         android:layout_height="222dp"
         android:layout_marginTop="24dp"
         tools:listitem="@layout/item_home_horizontal"
+        android:paddingEnd="24dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
         tools:itemCount="1"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
