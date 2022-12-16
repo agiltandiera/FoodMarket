@@ -23,7 +23,7 @@ class HomeAdapter (
     }
 
     override fun onBindViewHolder(holder: HomeAdapter.ViewHolder, position: Int) {
-        holder.bind(listData(position), itemAdapterCallback)
+        holder.bind(listData[position], itemAdapterCallback)
     }
 
     override fun getItemCount(): Int {
@@ -36,9 +36,9 @@ class HomeAdapter (
                 binding.txtTitleHomeHorizontal.text = data.title
                 binding.rbFoodHomeHorizontal.rating = data.rating
 
-                Glide.with(context)
-                    .load(data.src)
-                    .into(binding.ivPosterHomeHorizontal)
+//                Glide.with(context)
+//                    .load(data.src)
+//                    .into(binding.ivPosterHomeHorizontal)
 
                 itemView.setOnClickListener {
                     itemAdapterCallback.onClick(it, data)
