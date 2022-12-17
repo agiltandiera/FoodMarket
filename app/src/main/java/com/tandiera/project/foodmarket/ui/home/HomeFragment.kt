@@ -32,7 +32,7 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback{
         super.onActivityCreated(savedInstanceState)
 
         initDataDummy()
-        var adapter = HomeAdapter(foodList.this)
+        var adapter = HomeAdapter(foodList!!,this)
         var layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         binding.rvList.layoutManager = layoutManager
         binding.rvList.adapter = adapter
