@@ -5,11 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tandiera.project.foodmarket.databinding.ItemHomeVerticalBinding
-import com.tandiera.project.foodmarket.model.dummy.HomeModel
+import com.tandiera.project.foodmarket.model.dummy.HomeVerticalModel
 import com.tandiera.project.foodmarket.utils.Helpers.formatPrice
 
 class HomeNewTasteAdapter (
-    private val listData : List<HomeModel>,
+    private val listData : List<HomeVerticalModel>,
     private val itemAdapterCallback : ItemAdapterCallback,
 ) : RecyclerView.Adapter<HomeNewTasteAdapter.ViewHolder>() {
 
@@ -27,7 +27,7 @@ class HomeNewTasteAdapter (
     }
 
     inner class ViewHolder(val binding: ItemHomeVerticalBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(data: HomeModel, itemAdapterCallback : ItemAdapterCallback) {
+        fun bind(data: HomeVerticalModel, itemAdapterCallback : ItemAdapterCallback) {
             itemView.apply {
                 binding.tvTitleItemHomeVertical.text = data.title
                 binding.tvHargaItemHomeVertical.formatPrice(data.title)
@@ -45,6 +45,6 @@ class HomeNewTasteAdapter (
     }
 
     interface ItemAdapterCallback {
-        fun onClick(v : View, data : HomeModel)
+        fun onClick(v : View, data : HomeVerticalModel)
     }
 }
