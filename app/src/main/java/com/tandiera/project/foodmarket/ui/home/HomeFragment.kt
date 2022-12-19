@@ -25,14 +25,13 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback{
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
         initDataDummy()
-        var adapter = HomeAdapter(foodList.this)
+        var adapter = HomeAdapter(foodList!!,this)
         var layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         binding.rvList.layoutManager = layoutManager
         binding.rvList.adapter = adapter
