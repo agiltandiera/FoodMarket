@@ -34,7 +34,7 @@ class HomeNewTasteFragment : Fragment(), HomeNewTasteAdapter.ItemAdapterCallback
         super.onActivityCreated(savedInstanceState)
 
         initDataDummy()
-        var adapter = HomeNewTasteAdapter(foodList.this)
+        var adapter = HomeNewTasteAdapter(foodList!!,this)
         var layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(activity)
         binding.rvListHomeNewTaste.layoutManager = layoutManager
         binding.rvListHomeNewTaste.adapter = adapter
