@@ -20,6 +20,6 @@ class OrderFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentOrderBinding.inflate(inflater, container, false)
-        val binding.root
+        return binding.root
     }
 }
